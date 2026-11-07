@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Don Manuel | Santiago de Compostela</title>
+    <meta name="description" content="Café-bar restaurante de cocina gallega y parrilla en Santiago de Compostela: pulpo, churrasco, raxo y carnes a la brasa. Rúa do Avío 16. Tel. 981 57 13 17." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="preload"
+      href="fuentes/karla-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <style>
+      /* Fuentes alojadas junto a la web (licencia SIL OFL): sin peticiones a Google */
+      @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 600; font-display: swap; src: url("fuentes/fraunces-600-latin.woff2") format("woff2"); }
+      @font-face { font-family: "Karla"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("fuentes/karla-latin.woff2") format("woff2"); }
+      :root {
+        --principal: #6B3A1F;
+        --fondo: #FAF5EE;
+        --texto: #221A15;
+        --suave: color-mix(in srgb, var(--principal) 10%, var(--fondo));
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--fondo); color: var(--texto); font-family: Karla, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.6; }
+      .contenedor { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+      header { padding: 72px 0 56px; border-bottom: 1px solid var(--suave); }
+      h1, h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.1; margin: 0; }
+      h1 { font-size: clamp(2.6rem, 8vw, 4.5rem); color: var(--principal); }
+      header p { font-size: 1.2rem; margin: 12px 0 28px; max-width: 40ch; }
+      .boton { display: inline-block; background: var(--principal); color: var(--fondo); padding: 12px 22px; border-radius: 999px; text-decoration: none; font-weight: 700; transition: filter .15s, transform .15s; }
+      .boton:hover { filter: brightness(1.15); }
+      .boton:active { transform: translateY(1px); }
+      a:focus-visible { outline: 3px solid var(--texto); outline-offset: 3px; }
+      footer a { color: inherit; font-weight: 700; display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+      footer .redes a + a { margin-left: 16px; }
+      main { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 56px 0; }
+      @media (max-width: 700px) { main { grid-template-columns: 1fr; gap: 40px; } }
+      h2 { font-size: 1.7rem; margin-bottom: 16px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: 10px 0; border-bottom: 1px solid var(--suave); text-align: left; vertical-align: top; }
+      th { font-weight: 400; }
+      td { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+      .precios td { white-space: nowrap; padding-left: 12px; }
+      footer { background: var(--suave); padding: 40px 0; }
+      footer .contenedor { display: flex; flex-wrap: wrap; gap: 12px 40px; }
+      footer p, footer address { margin: 0; font-style: normal; }
+      footer span { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: .08em; opacity: .8; }
+      .aviso-demo { background: var(--texto); color: var(--fondo); text-align: center; font-size: 0.9rem; padding: 8px 20px; }
+      .mapa { padding-bottom: 56px; }
+      .mapa iframe { display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 12px; margin-bottom: 8px; background: var(--suave); }
+      .enlace-mapa { color: inherit; font-weight: 700; display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+      @media (prefers-reduced-motion: reduce) { .boton { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <div class="aviso-demo" role="note">Propuesta de dise&ntilde;o: esta no es la web oficial de Don Manuel.</div>
+    <header>
+      <div class="contenedor">
+        <h1>Don Manuel</h1>
+        <p lang="es">Café-bar restaurante de cocina gallega y parrilla</p>
+        <a class="boton" href="tel:+34981571317">Llama para reservar</a>
+      </div>
+    </header>
+
+    <div class="contenedor">
+      <main>
+        <section>
+          <h2 id="titulo-horario">Horario</h2>
+          <table aria-labelledby="titulo-horario">
+            <tr><th scope="row">Lunes a jueves</th><td>8:00 – 18:00</td></tr>
+<tr><th scope="row">Viernes y sábado</th><td>8:00 – 1:00</td></tr>
+<tr><th scope="row">Domingo</th><td>Cerrado</td></tr>
+          </table>
+        </section>
+        <section>
+          <h2 id="titulo-precios">Carta</h2>
+          <table class="precios" aria-labelledby="titulo-precios">
+            <tr><th scope="row">Pulpo (ración)</th><td>17,50 €</td></tr>
+<tr><th scope="row">Churrasco de ternera (media: 10 €)</th><td>17 €</td></tr>
+<tr><th scope="row">Churrasco de cerdo (media: 9,50 €)</th><td>15 €</td></tr>
+<tr><th scope="row">Raxo</th><td>10 €</td></tr>
+<tr><th scope="row">Zorza</th><td>9 €</td></tr>
+<tr><th scope="row">Secreto de cerdo</th><td>12 €</td></tr>
+<tr><th scope="row">Entrecot de ternera</th><td>20 €</td></tr>
+<tr><th scope="row">Plato combinado (lomo o chuleta, con huevos y patatas)</th><td>10 €</td></tr>
+          </table>
+        </section>
+      </main>
+      <section class="mapa" aria-labelledby="titulo-mapa">
+        <h2 id="titulo-mapa">Cómo llegar</h2>
+        <iframe title="Mapa de ubicaci&oacute;n de Don Manuel" src="https://www.openstreetmap.org/export/embed.html?bbox=-8.5513096,42.892312,-8.5433096,42.896312&amp;layer=mapnik&amp;marker=42.894312,-8.5473096" loading="lazy"></iframe>
+        <a class="enlace-mapa" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.894312%2C-8.5473096">Abrir en Google Maps</a>
+      </section>
+    </div>
+
+    <footer>
+      <div class="contenedor">
+        <p><span>Tel&eacute;fono</span><a href="tel:+34981571317">981 57 13 17</a></p>
+        <address><span>Dirección</span>Rúa do Avío, 16 - Local 1, 15705 Santiago de Compostela</address>
+      </div>
+    </footer>
+  </body>
+</html>
